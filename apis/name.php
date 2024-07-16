@@ -2,6 +2,6 @@
 
 $myname = array("name" => "Jeiberth Malagon");
 
-echo json_encode(%$myname)
+echo json_encode($myname);
 
 ?>
