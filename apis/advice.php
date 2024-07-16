@@ -17,7 +17,7 @@ if (isset($adviceData['slips']) && count($adviceData['slips']) > 0) {
     $apiKey = 'YOUR_PEXELS_API_KEY';
     $photoResponse = file_get_contents("https://api.pexels.com/v1/search?query=" . urlencode($advice) . "&per_page=1", false, stream_context_create([
         "http" => [
-            "header" => "Authorization: $apiKey"
+            "header" => "Authorization: 5yZAVVh7vpnhrpTJHIzOzYr9jkqJfFPgDfHjVHFYatFmHDaLFMcVM9rU"
         ]
     ]));
     $photoData = json_decode($photoResponse, true);
