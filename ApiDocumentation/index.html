@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .showcase {
+            min-height: 400px;
+            background: url('showcase.jpg') no-repeat 0 -400px;
+            text-align: center;
+            color: #fff;
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        .main h2 {
+            color: #333;
+        }
+        .main pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow: auto;
+        }
+        .main code {
+            color: #c7254e;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>API Documentation</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#endpoints">Endpoints</a></li>
+                    <li><a href="#examples">Examples</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>Welcome to the API Documentation</h1>
+            <p>Explore the available endpoints and learn how to integrate them into your projects.</p>
+        </div>
+    </section>
+
+    <section class="main container">
+        <h2 id="overview">Overview</h2>
+        <p>This documentation covers the APIs available for your project, including endpoints for fetching advice, studies, skills, experiences, and more. Each endpoint is designed to return JSON data that can be easily integrated into your website.</p>
+        <p><strong>Base URL:</strong> <code>https://jeiberth.com/</code></p>
+
+        <h2 id="endpoints">Endpoints</h2>
+
+        <h3>1. Get Name</h3>
+        <p><strong>Endpoint:</strong> <code>/name</code></p>
+        <p><strong>Method:</strong> GET</p>
+        <p><strong>Description:</strong> Returns the name.</p>
+        <pre><code>{
+    "name": "Jeiberth Malagon"
+}</code></pre>
+
+        <h3>2. Get Studies</h3>
+        <p><strong>Endpoint:</strong> <code>/studies</code></p>
+        <p><strong>Method:</strong> GET</p>
+        <p><strong>Description:</strong> Returns a list of studies.</p>
+        <pre><code>{
+    "studies": [
+        {
+            "image": "mvanierw.jpg",
+            "alt": "vanier w",
+            "logo": "mvanier.png",
+            "logoAlt": "Vanier Logo",
+            "title": "Software Development",
+            "institution": "Vanier College",
+            "description": "This program focuses on equipping students with the skills to consult on software design, enhance existing software, and develop tailored solutions that optimize operational efficiency and meet user needs."
+        },
+        ...
+    ]
+}</code></pre>
+
+        <h3>3. Get Skills</h3>
+        <p><strong>Endpoint:</strong> <code>/skills</code></p>
+        <p><strong>Method:</strong> GET</p>
+        <p><strong>Description:</strong> Returns a list of skills.</p>
+        <pre><code>{
+    "skills": ["JavaScript", "HTML", "CSS", "Node.js", "Express"]
+}</code></pre>
+
+        <h3>4. Get Random Advice</h3>
+        <p><strong>Endpoint:</strong> <code>/random_advice</code></p>
+        <p><strong>Method:</strong> GET</p>
+        <p><strong>Description:</strong> Returns a random piece of advice and a related photo.</p>
+        <pre><code>{
+    "advice": "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+    "photo": "advice1.jpg"
+}</code></pre>
+
+        <h3>5. Get Experience</h3>
+        <p><strong>Endpoint:</strong> <code>/experience</code></p>
+        <p><strong>Method:</strong> GET</p>
+        <p><strong>Description:</strong> Returns a list of experiences.</p>
+        <pre><code>{
+    "experiences": [
+        {
+            "image": "fweb.jpg",
+            "alt": "Web Development",
+            "title": "Web Development",
+            "description": "In the dynamic field of web development, I have honed my skills through hands-on experience, creating several websites with a trial-and-error approach. Currently, I am spearheading a project of a game shop, designing an online platform that will enable them to venture into e-commerce. Utilizing HTML, CSS, and JavaScript, I am crafting a user-friendly interface that caters to the digital shopping experience."
+        },
+        ...
+    ]
+}</code></pre>
+
+        <h3>6. Search Advice</h3>
+        <p><strong>Endpoint:</strong> <code>/advice/{query}</code></p>
+        <p><strong>Method:</strong> GET</p>
+        <p><strong>Description:</strong> Returns advice based on the provided query and a related photo.</p>
+        <p><strong>Path Parameter:</strong></p>
+        <ul>
+            <li><code>query</code> (string): The keyword to search for advice.</li>
+        </ul>
+        <pre><code>{
+    "advice": "Don't watch the clock; do what it does. Keep going.",
+    "photo": "https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg"
+}</code></pre>
+
+</section>
+</body>
+</html>
