@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice and Photo</title>
+    <link rel="stylesheet" href="style.css" type="text/css"></head>
+<body>
+
+    <div class="Menu">
+        <a href="#Home"><img id="LG" src="../Lg.jpg" alt="Logo"></a>
+        
+        <a class="Item" href="../index.html">Home Page</a>
+        <a class="Item" href="../FirstR/index.html">My Template</a>
+        <a class="Item" href="../Game/index.html" >Bored?</a>
+        <a class="Item" href="./index.html" >Counseling</a>
+
+       
+        <a onclick="ChangeColor()" id="bww" href="#Home"><img id="bw_" src="../bw.png" alt="BlWh"></a>
+    </div>
+
+    <div id="Advice">
+
+    <h1 id="adviceTitle">Get Advice</h1>
+    <div id="form">
+    <input type="text" id="queryInput" placeholder="Enter a word for advice">
+    <button id="get" onclick="getAdvice()">Get Advice</button>
+    <button id="getr" onclick="getRandomAdvice()">Get Random Advice</button> <!-- New button -->
+    </div>
+    <h3 id="adviceText"></h3>
+    <img id="adviceImage" src="" alt="Advice Image" style="display:none;">
+    <script src="script.js" type="module"></script>
+    </div>
+</body>
+</html>
