@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Redirect /advice/{query} to advice.php
+
+RewriteRule ^advice/(.*)$ advice.php [L]
+
+RewriteRule ^name$ name.php [L]
+
+RewriteRule ^studies$ studies.php [L]
+
+RewriteRule ^skills$ skills.php [L]
+
+RewriteRule ^random_advice$ random_advice.php [L]
+
+RewriteRule ^experience$ experience.php [L]
