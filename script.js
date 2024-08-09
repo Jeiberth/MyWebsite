@@ -31,7 +31,19 @@ function ChangeColor() {
       element.style.setProperty('--c5', newC5);
       element.style.setProperty('--c6', newC6);
     });
+
+    const images = document.querySelectorAll('.media a img');
+            images.forEach(img => {
+                const currentFilter = getComputedStyle(img).getPropertyValue('--pp');
+                if (currentFilter.trim() === 'invert(100%)') {
+                    img.style.setProperty('--pp', 'invert(0%)');
+                } else {
+                    img.style.setProperty('--pp', 'invert(100%)');
+                }
+            });
+
   }
+
 
   function ChangeContent1() {     document.getElementById("myHeader").innerHTML="<b>Arduino:</b><br>Inspired by a line-following robot competition at Concordia University in 2023, I embraced the challenge of learning Arduino to bring creative hardware projects to life.";     }
   function ChangeContent2() {     document.getElementById("myHeader").innerHTML="<b>C++:</b><br> Driven by curiosity, I independently delved into C++ and honed my skills in this powerful programming language.  ";  }

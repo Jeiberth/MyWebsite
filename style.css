@@ -11,6 +11,7 @@
     --f3: 1em;
     --f2: 1.5em;
     --f1: 2em;
+    --pp: invert(100%);
     margin: 0;
     padding: 0;
     background: var(--c2);
@@ -567,9 +568,31 @@ form{
 }
 
 
+.media{
+    height: 50px;
+    width: 200px;
+    display: flex;
+    margin-top: 25px;
+    align-content: center;
+    align-self: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: transparent;
+}
 
+.media a img{
+    width: 35px;
+    height: auto;
+    margin: 5px;
+    background: transparent;
+    filter: var(--pp);
+}
 
+.media a{
 
+    background: transparent;
+
+}
 
 
 
