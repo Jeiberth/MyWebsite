@@ -89,11 +89,13 @@ h2{
 
 
 .Menu a{
-    font-weight: bold;
+    font-weight: 700;
     color: var(--c1);
     text-decoration: none;
     background-color: transparent; 
     font-size: var(--f3);
+    min-width: 45;
+    line-height: 1.5;
 }
 
 .Item{
@@ -102,7 +104,7 @@ h2{
 }
 
 .Menu a:hover{
-    font-weight: lighter;
+    font-weight: 1000;
 }
 
 #LG{

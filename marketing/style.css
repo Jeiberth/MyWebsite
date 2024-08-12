@@ -11,6 +11,7 @@
     --f3: 1em;
     --f2: 1.5em;
     --f1: 2em;
+    --pp: invert(100%);
     margin: 0;
     padding: 0;
     background: var(--c2);
@@ -47,18 +48,21 @@ h2{
     background-color: var(--c2);
     position: fixed;
     width: 90vw;
-    animation: beg 1s ease 0s 1 normal forwards;
+    animation: beg 1s ease 0s 1 normal;
     z-index: 100;
     box-shadow: 0 4px 8px 0 var(--c5), 0 6px 20px 0 var(--c6);
+    align-items: center; 
 }
 
 
 .Menu a{
-    font-weight: bold;
+    font-weight: 700;
     color: var(--c1);
     text-decoration: none;
     background-color: transparent; 
     font-size: var(--f3);
+    min-width: 45;
+    line-height: 1.5;
 }
 
 .Item{
@@ -67,7 +71,7 @@ h2{
 }
 
 .Menu a:hover{
-    font-weight: lighter;
+    font-weight: 1000;
 }
 
 #LG{
@@ -88,6 +92,7 @@ h2{
     margin: 0 ;
     padding: 0 !important;
 }
+
 
 h1{
     position: absolute;
