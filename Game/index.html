@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="../styleChat.css" type="text/css">
     
     <title>The Pixelated World of PixelPaws </title>
     <link rel="icon" type="image/svg+xml" href="./cat.png" />
@@ -79,5 +80,42 @@
         
         <div class="st" id="b0"><h1>You were killed...</h1><input type="button" onclick="next(1)" class="bpp" value="Try again" id="lost"></div>      
     </div>
+
+    <!-- Chat Trigger -->
+    <div id="chat-trigger" class="chat-trigger">
+        <div class="trigger-message">
+            <span>Curious about something? Chat with me, Jeiberth AI!</span>
+        </div>
+        <div class="trigger-image">
+            <img class="trigger-img" src="https://static.vecteezy.com/system/resources/previews/005/720/457/original/simple-black-icon-of-robot-head-isolated-on-white-background-free-vector.jpg" alt="AI Avatar">
+        </div>
+    </div>
+
+    <!-- Chat Window -->
+    <div id="chat-window" class="chat-window">
+        <div id="chat-header" class="chat-header">
+            <img class="chat-header-img" src="https://static.vecteezy.com/system/resources/previews/005/720/457/original/simple-black-icon-of-robot-head-isolated-on-white-background-free-vector.jpg" alt="AI Avatar">
+            <h3>Jeiberth AI</h3>
+            <div id="typing-indicator" class="typing-indicator" style="display: none;">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div id="messages-container" class="messages-container">
+            <p class="disclaimer">Note: I’m an AI, so some info might not be 100% accurate</p>
+            <div class="message ai">Hi! I'm Jeiberth AI, your friendly assistant. Got any questions? I'm here to help!</div>
+        </div>
+
+        <div class="input-container">
+            <input id="chat-input" type="text" placeholder="Type your message..." maxlength="80">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="../scriptChat.js" type="module"></script>
+
+
 </body>
 </html>

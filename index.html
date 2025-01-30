@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="./styleChat.css" type="text/css">
+
 
     <meta name="title" content="Jeiberth Malagon - Software Passionate " />
     <meta name="description" content="Personal Website" />
@@ -130,6 +132,40 @@
 
     </div>
 
+        <!-- Chat Trigger -->
+        <div id="chat-trigger" class="chat-trigger">
+            <div class="trigger-message">
+                <span>Curious about something? Chat with me, Jeiberth AI!</span>
+            </div>
+            <div class="trigger-image">
+                <img class="trigger-img" src="https://static.vecteezy.com/system/resources/previews/005/720/457/original/simple-black-icon-of-robot-head-isolated-on-white-background-free-vector.jpg" alt="AI Avatar">
+            </div>
+        </div>
+    
+        <!-- Chat Window -->
+        <div id="chat-window" class="chat-window">
+            <div id="chat-header" class="chat-header">
+                <img class="chat-header-img" src="https://static.vecteezy.com/system/resources/previews/005/720/457/original/simple-black-icon-of-robot-head-isolated-on-white-background-free-vector.jpg" alt="AI Avatar">
+                <h3>Jeiberth AI</h3>
+                <div id="typing-indicator" class="typing-indicator" style="display: none;">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+    
+            <div id="messages-container" class="messages-container">
+                <p class="disclaimer">Note: I’m an AI, so some info might not be 100% accurate</p>
+                <div class="message ai">Hi! I'm Jeiberth AI, your friendly assistant. Got any questions? I'm here to help!</div>
+            </div>
+    
+            <div class="input-container">
+                <input id="chat-input" type="text" placeholder="Type your message..." maxlength="80">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    
+
 
     <script type="module">
         // Import the functions you need from the SDKs you need
@@ -177,7 +213,8 @@
           });
         });
       </script>
-      
+     <script src="./scriptChat.js" type="module"></script>
+
 
 	
 
