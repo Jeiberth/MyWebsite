@@ -13,20 +13,24 @@
     background-color: transparent;
   }
 
+  #send-btn{
+    border-radius: 30px;
+  }
+
   .trigger-message {
-    background: rgb(255, 255, 255);
+    background: var(--c2);
     padding: 12px 20px;
     border-radius: 25px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px var(--c1);
   }
 
   .trigger-image {
     width: 80px;
     height: 80px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--c2);
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px var(--c1);
   }
 
   .trigger-img{
@@ -34,6 +38,10 @@
     height: 65px;
     transform:translate(7px, 7px);
     border-radius: 50%;
+  }
+
+  #chat-input{
+    border-radius: 30px;
   }
 
   .chat-header-img{
@@ -48,13 +56,14 @@
     right: -100%;
     width: 380px;
     height: 70vh;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    background: var(--c2);
+    border-radius: 30px;
+    box-shadow: 0 5px 25px var(--c1);
     transition: all 0.7s ease;
     display: flex;
     flex-direction: column;
     z-index: 10000;
+    overflow: hidden;
   }
 
   .chat-window.open {
@@ -67,7 +76,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--c4);
     cursor: pointer;
   }
 
@@ -79,7 +88,7 @@
   }
 
   .disclaimer{
-    color: #66666665;
+    color: var(--c5);
     line-height: 15px;
     font-size: 13px;
     text-align: center;
@@ -89,7 +98,7 @@
   .dot {
     width: 6px;
     height: 6px;
-    background: #666;
+    background: var(--c1);
     border-radius: 50%;
     animation: bounce 1.4s infinite ease-in-out;
   }
@@ -133,12 +142,13 @@
   }
 
     .message.ai {
-    background: #f1f1f1;
+    background: var(--c1);
     align-self: flex-start;
+    color: var(--c2);
     }
 
     .message.user {
-    background: #007bff;
+    background: #00134d;
     color: white;
     align-self: flex-end;
     }
@@ -164,8 +174,8 @@
 
     .input-container button {
     padding: 10px 20px;
-    background: #000000d0;
-    color: white;
+    background: var(--c1);
+    color: var(--c2);
     border: none;
     border-radius: 5px;
     cursor: pointer;
