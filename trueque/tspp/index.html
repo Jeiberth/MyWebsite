@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Trueque</title>
+    <style>
+        /* Existing CSS styles */
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #27ae60;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --background: #f8fff9;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: "Rubik", sans-serif;
+            background-color: var(--background);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 30px auto;
+            overflow: hidden;
+            border: 3px solid var(--text-dark);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .circle:hover {
+            transform: scale(1.05);
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content-container {
+            max-width: 700px;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin: 20px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 1.5rem;
+            color: var(--text-dark);
+            font-weight: 700;
+            letter-spacing: -1px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--text-dark);
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            color: var(--text-dark);
+            margin: 1.5rem 0 0.8rem;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin: 1.5rem 0;
+            font-weight: 400;
+        }
+
+        .policy-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem;
+        }
+
+        .policy-list li {
+            margin: 1rem 0;
+            padding: 10px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: auto;
+            border-top: 3px solid var(--primary-color);
+        }
+
+        .footer-content {
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .content-container {
+                padding: 25px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <img src="../truequeLogo.jpg" alt="Trueque Logo">
+    </div>
+
+    <div class="content">
+        <div class="content-container">
+            <h1>Privacy Policy</h1>
+            <p class="description">Last Updated: 24/02/2025</p>
+            
+            <p class="description">Thank you for using Trueque! Your privacy is important to us. This Privacy Policy explains how we collect, use, store, and protect your information when you use our app. By using Trueque, you agree to the terms outlined below. If you disagree, please discontinue use.</p>
+
+            <h2>1. Information We Collect</h2>
+            
+            <h3>1.1 Data You Provide</h3>
+            <ul class="policy-list">
+                <li><span class="highlight">Personal Information:</span> Name, email, password, profile picture, and manually entered location (during registration)</li>
+                <li><span class="highlight">Product/Service Information:</span> Name, description, color, weight, price, category, material, and images</li>
+                <li><span class="highlight">Chat Information:</span> Text messages, timestamps, sender/recipient details, and read status</li>
+                <li><span class="highlight">Offers/Ratings:</span> Products/services/money exchanged, ratings (1-5), comments, and timestamps</li>
+            </ul>
+
+            <h3>1.2 Automatically Collected Data</h3>
+            <ul class="policy-list">
+                <li><span class="highlight">Location Data:</span> Only collected via manual input (e.g., during registration). We do not track your device's GPS or precise location</li>
+                <li>No device identifiers, IP addresses, or usage logs collected</li>
+            </ul>
+
+            <h2>2. How We Use Your Information</h2>
+            <ul class="policy-list">
+                <li>Enable core features (profile creation, product listings, and exchanges)</li>
+                <li>Facilitate discovery of nearby products/services</li>
+                <li>Power real-time communication between users</li>
+                <li>Send verification codes, password resets, and policy updates</li>
+                <li>Monitor and prevent unauthorized access</li>
+            </ul>
+            
+            <p class="description"><strong>We Do NOT:</strong><br>
+            - Sell, trade, or rent your data<br>
+            - Use your data for advertising, marketing, or analytics</p>
+
+            <h2>3. Third-Party Services</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                        <th>Data Shared</th>
+                        <th>Privacy Policy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Railway</td>
+                        <td>Backend hosting</td>
+                        <td>Necessary app data</td>
+                        <td><a href="https://railway.com/legal/privacy" target="_blank">View Policy</a></td>
+                    </tr>
+                    <tr>
+                        <td>AWS (S3)</td>
+                        <td>Image storage</td>
+                        <td>Profile/product images</td>
+                        <td><a href="http://aws.amazon.com/privacy/" target="_blank">View Policy</a></td>
+                    </tr>
+                    <tr>
+                        <td>Photon</td>
+                        <td>Address autocomplete</td>
+                        <td>Manual location input</td>
+                        <td><a href="https://www.photon.com/privacy#:~:text=Photon%20does%20not%20share%20your,Business%20partners" target="_blank">View Policy</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pusher</td>
+                        <td>Real-time chat</td>
+                        <td>Chat messages</td>
+                        <td><a href="https://pusher.com/legal-archived/privacy-policy/#:~:text=We%20may%20store%20personal%20data,have%20an%20account%20with%20Pusher." target="_blank">View Policy</a></td>
+                    </tr>
+                    <tr>
+                        <td>SMTP</td>
+                        <td>Email delivery</td>
+                        <td>Email addresses</td>
+                        <td><a href="https://www.smtp.com/policies/privacy-policy/#:~:text=We%20may%20collect%20or%20obtain,about%20you%20from%20third%20parties." target="_blank">View Policy</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p class="description"><strong>Data Processors:</strong> These third parties act under our instructions and comply with GDPR/CCPA.<br>
+            <strong>International Transfers:</strong> Data may be transferred globally using GDPR-approved safeguards (e.g., SCCs).</p>
+
+            <h2>4. Data Sharing & Your Rights</h2>
+            
+            <h3>4.1 No Sale/Sharing</h3>
+            <p class="description">We do not sell, trade, or share your data with external parties except as necessary for app functionality (see Section 3).</p>
+            
+            <h3>4.2 Your Control</h3>
+            <ul class="policy-list">
+                <li><span class="highlight">Access/Update:</span> Edit your profile/data in-app or email truequeww@gmail.com</li>
+                <li><span class="highlight">Deletion:</span> Permanently delete account via app with immediate data erasure (except where required by law)</li>
+            </ul>
+
+            <h3>CCPA/GDPR Rights</h3>
+            <ul class="policy-list">
+                <li>Right to know what personal data is collected</li>
+                <li>Right to correct inaccurate information</li>
+                <li>Right to delete personal data</li>
+                <li>Right to opt-out of data sales (not applicable as we don't sell data)</li>
+            </ul>
+
+            <p class="description">Submit requests via email. We respond within 30 days and verify identity before processing.</p>
+
+            <h2>5. Data Security</h2>
+            <ul class="policy-list">
+                <li>Passwords hashed with bcrypt algorithm</li>
+                <li>SSL/TLS encryption for data transmission</li>
+                <li>Limited access to authorized personnel only</li>
+                <li>Images stored on AWS S3 with encryption at rest</li>
+            </ul>
+
+            <h2>6. Children’s Privacy</h2>
+            <p class="description">Trueque is not intended for users under 13 (or 16 in the EU). Contact us immediately at truequeww@gmail.com if you believe a child has provided data, and we'll delete it promptly.</p>
+
+            <h2>7. Updates & Contact</h2>
+            <p class="description"><strong>Policy Changes:</strong> Notified via email or in-app alerts. Continued use after updates implies acceptance.</p>
+            
+            <p class="description"><strong>Contact Us:</strong><br>
+            Email: <a href="mailto:truequeww@gmail.com">truequeww@gmail.com</a><br>
+            </p>
+
+            <p class="description"><strong>Effective Date:</strong> 24/02/2025</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p style="margin: 0px;"><a href="../index.html">Home Page</a></p>
+            <p style="margin: 0px;"><a href="mailto:truequeww@gmail.com">truequeww@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
