@@ -116,7 +116,7 @@
             font-weight: 500;
         }
 
-        table {
+        .bigScreen {
             width: 100%;
             border-collapse: collapse;
             margin: 2rem 0;
@@ -170,6 +170,87 @@
             color: var(--primary-color);
         }
 
+        .smalScreen{
+            display: none;
+        }
+
+        .service-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 15px;
+            margin: 2rem 0;
+            display: none;
+        }
+
+        .service-table td {
+            background: #f8fff9;
+            border-radius: 12px;
+            padding: 20px;
+            vertical-align: top;
+            border: 2px solid #e8f5e9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: center;
+        }
+
+        .service-table td:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-table td strong {
+            display: block;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .service-table td p {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 8px 0;
+        }
+
+        .service-table a {
+            display: inline-block;
+            color: #2ecc71;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .service-table a:hover {
+            background: rgba(46, 204, 113, 0.1);
+            color: #27ae60;
+        }
+
+        @media (max-width: 768px) {
+            .service-table {
+                width: 100%;
+                display: block;
+                border-spacing: 0;
+            }
+
+            .service-table tbody {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 15px;
+            }
+
+            .service-table tr {
+                display: contents;
+            }
+
+            .service-table td {
+
+                margin: 0;
+            }
+        }
+
         @media (max-width: 768px) {
             .content-container {
                 padding: 25px;
@@ -180,16 +261,19 @@
                 font-size: 2rem;
             }
 
-            table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
-            }
-
             .description {
                 font-size: 1rem;
             }
+
+            .bigScreen{
+                display: none;
+            }
+
+            .smallScreen{
+                display: inline;
+            }
         }
+
     </style>
 </head>
 <body>
@@ -234,7 +318,8 @@
             - Use your data for advertising, marketing, or analytics</p>
 
             <h2>3. Third-Party Services</h2>
-            <table>
+
+            <table class="bigScreen">
                 <thead>
                     <tr>
                         <th>Service</th>
@@ -273,6 +358,43 @@
                         <td>Email delivery</td>
                         <td>Email addresses</td>
                         <td><a href="https://www.smtp.com/policies/privacy-policy/#:~:text=We%20may%20collect%20or%20obtain,about%20you%20from%20third%20parties." target="_blank">View Policy</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="service-table smallScreen">
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong>Railway</strong>
+                            <p>Backend hosting</p>
+                            <p>Necessary app data</p>
+                            <a href="https://railway.com/legal/privacy" target="_blank">View Policy</a>
+                        </td>
+                        <td>
+                            <strong>AWS (S3)</strong>
+                            <p>Image storage</p>
+                            <p>Profile/product images</p>
+                            <a href="http://aws.amazon.com/privacy/" target="_blank">View Policy</a>
+                        </td>
+                        <td>
+                            <strong>Photon</strong>
+                            <p>Address autocomplete</p>
+                            <p>Manual location input</p>
+                            <a href="https://www.photon.com/privacy#:~:text=Photon%20does%20not%20share%20your,Business%20partners" target="_blank">View Policy</a>
+                        </td>
+                        <td>
+                            <strong>Pusher</strong>
+                            <p>Real-time chat</p>
+                            <p>Chat messages</p>
+                            <a href="https://pusher.com/legal-archived/privacy-policy/#:~:text=We%20may%20store%20personal%20data,have%20an%20account%20with%20Pusher." target="_blank">View Policy</a>
+                        </td>
+                        <td>
+                            <strong>SMTP</strong>
+                            <p>Email delivery</p>
+                            <p>Email addresses</p>
+                            <a href="https://www.smtp.com/policies/privacy-policy/#:~:text=We%20may%20collect%20or%20obtain,about%20you%20from%20third%20parties." target="_blank">View Policy</a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
