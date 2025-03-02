@@ -59,6 +59,14 @@ function ChangeColor() {
   function ChangeContent12() {     document.getElementById("myHeader").innerHTML="<b>Linux:</b><br> My experience with Linux extends from managing virtual machines to executing complex commands in the console, underscoring my versatility in various computing environments.  ";     }
   function ChangeContent13() {     document.getElementById("myHeader").innerHTML="<b>React:</b><br> I’m a developer rapidly advancing my React skills, currently building a user-friendly template for small businesses.  ";     }
 
+  function ChangeContent14() {     document.getElementById("myHeader").innerHTML="<b>Laravel:</b><br>Gained expertise through D2 projects, mastering artisan, queues, migrations, Eloquent, authentication, middleware, and scalable app development.<br>";     }
+  function ChangeContent15() {     document.getElementById("myHeader").innerHTML="<b>Vue:</b><br>Built proficiency with Option and Composition API, Vuex, Pinia, Axios, broadcasting, routing, and component management for dynamic, interactive web apps.";     }
+  function ChangeContent16() {     document.getElementById("myHeader").innerHTML="<b>Quasar:</b><br>Learned by developing the Trueque mobile app, leveraging Quasar for responsive UI and seamless mobile app development.";     }
+  function ChangeContent17() {     document.getElementById("myHeader").innerHTML="<b>Capacitor:</b><br>Developed Trueque app, customizing splash/logo, and building app bundles for Play Store deployment.";     }
+  function ChangeContent18() {     document.getElementById("myHeader").innerHTML="<b>AWS:</b><br>Worked with S3 for image storage and Amplify for smooth website deployment.";     }
+  function ChangeContent19() {     document.getElementById("myHeader").innerHTML="<b>Jira:</b><br>Managed projects by utilizing task assignment, scheduling, sprint planning, backlog prioritization, progress tracking, and collaboration tools for efficient workflows.";     }
+
+
   function ChangeToOriginalContent(){
     document.getElementById("myHeader").innerHTML='<b style="font-size: 1.5em">My abilities</b>';
   }

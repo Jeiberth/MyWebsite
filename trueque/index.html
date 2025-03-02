@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trueque</title>
+    <title>Trueque - Community Exchange</title>
     <style>
+        /* Same CSS as previous page - no modifications */
         :root {
             --primary-color: #2ecc71;
             --secondary-color: #27ae60;
@@ -23,7 +24,6 @@
             font-family: "Rubik", sans-serif;
             background-color: var(--background);
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
         .circle {
@@ -67,11 +67,10 @@
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             margin: 0 0 1.5rem;
             color: var(--text-dark);
             font-weight: 700;
-            letter-spacing: -1px;
         }
 
         .description {
@@ -81,44 +80,50 @@
             font-weight: 400;
         }
 
-        .features-header {
-            color: var(--text-dark);
-            margin: 2rem 0 1.5rem;
-            font-weight: 600;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            justify-content: center;
-        }
-
-        .features-list {
+        .feature-list {
             list-style: none;
             padding: 0;
-            margin: 0 0 2rem;
+            margin: 2rem 0;
         }
 
-        .features-list li {
-            margin: 1.2rem 0;
-            padding: 15px 20px;
+        .feature-item {
+            margin: 1.5rem 0;
+            padding: 20px;
             background: #f8f9fa;
             border-radius: 10px;
             text-align: left;
-            display: flex;
-            gap: 10px;
-            align-items: flex-start;
-            transition: transform 0.2s ease;
+            transition: all 0.3s ease;
         }
 
-        .features-list li:hover {
-            transform: translateX(10px);
-            background: #f1f2f6;
+        .feature-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
         .feature-icon {
-            color: var(--primary-color);
-            font-weight: 700;
-            min-width: 30px;
+            font-size: 1.5rem;
+            margin-right: 0px;
+            vertical-align: middle;
+        }
+
+        .cta-button {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin: 1rem 0;
+            width: 100%;
+            background: var(--primary-color);
+            color: white;
+            border: 2px solid var(--primary-color);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         footer {
@@ -156,15 +161,11 @@
             }
 
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .description {
                 font-size: 1rem;
-            }
-
-            .features-list li {
-                padding: 12px 15px;
             }
         }
     </style>
@@ -176,59 +177,55 @@
 
     <div class="content">
         <div class="content-container">
-            <h1>Trueque</h1>
+            <h1>🔄 Trueque: Where Community Meets Exchange</h1>
             <p class="description">
-                Trueque reimagines the ancient art of bartering for the modern world. Swipe through a dynamic marketplace of items and services offered by your community - from forgotten treasures collecting dust in homes to valuable skills waiting to be shared.
-                When mutual interests spark a match, our secure chat becomes your negotiation hub: explore each other's offerings, check community reviews, and craft creative exchanges combining items, services, or optional cash balances.
+                Trueque reimagines the ancient art of bartering for the modern world. In a cash-driven society, we believe meaningful exchange should go beyond money. Trueque is where your unused items find new life and your unique skills create lasting connections, not just transactions.
             </p>
 
-            <div class="features-header">
-                <span>🔑</span>
-                <h2 style="margin: 0px;">Key Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3 style="color: var(--text-dark); margin: 0; text-align: center;"><span class="feature-icon">🌟</span>Why Trueque?</h3>
+                    <p style="margin: 0.5rem 0 0;">Trueque brings community back to exchange. Trade items and skills—like a vintage lamp for guitar lessons or coding for garden help. It’s about valuing time, talents, and treasures, not just money.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3 style="color: var(--text-dark); margin: 0; text-align: center;"><span class="feature-icon">🌱</span>Waste-Free Network</h3>
+                    <p style="margin: 0.5rem 0 0;">Every trade reduces waste. Exchange what you no longer need, keeping items out of landfills while giving them new life.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3 style="color: var(--text-dark); margin: 0; text-align: center;"><span class="feature-icon">⚖️</span>Modern Bartering</h3>
+                    <p style="margin: 0.5rem 0 0;">Barter with ease. Combine items, services, and optional cash for flexible offers. Trade a bookshelf for design work or lessons for a book—Trueque makes negotiations simple and fair.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3 style="color: var(--text-dark); margin: 0; text-align: center;"><span class="feature-icon">🔹</span>Smart Discovery</h3>
+                    <p style="margin: 0.5rem 0 0;">Swipe through local items and services, from hidden treasures to valuable skills. Use filters to find exactly what you're looking for, all with a simple swipe.</p>
+                </div>
+      
+                <div class="feature-item">
+                    <h3 style="color: var(--text-dark); margin: 0; text-align: center;"><span class="feature-icon">🤝</span>Skill Exchange Hub</h3>
+                    <p style="margin: 0.5rem 0 0;">More than a marketplace—Trueque lets you trade skills like cooking, carpentry, or language lessons. It's about making meaningful connections and unlocking the value of talents.</p>
+                </div>
             </div>
 
-            <ul class="features-list">
-                <li>
-                    <span class="feature-icon">•</span>
-                    <div>
-                        <strong>Smart Discovery:</strong> Swipe intuitively with powerful filters (category, material, price range, location radius)
-                    </div>
-                </li>
-                <li>
-                    <span class="feature-icon">•</span>
-                    <div>
-                        <strong>Modern Bartering:</strong> Create balanced offers mixing items/services + cash (optional)
-                    </div>
-                </li>
-                <li>
-                    <span class="feature-icon">•</span>
-                    <div>
-                        <strong>Trust Network:</strong> Make informed decisions with user reviews and offer history
-                    </div>
-                </li>
-                <li>
-                    <span class="feature-icon">•</span>
-                    <div>
-                        <strong>Personal Control:</strong> Manage your profile's offerings and skills with ease
-                    </div>
-                </li>
-                <li>
-                    <span class="feature-icon">•</span>
-                    <div>
-                        <strong>Flexible Trading:</strong> Track negotiations with accept/reject options + counteroffer capabilities
-                    </div>
-                </li>
-            </ul>
-
             <p class="description">
-                Revive the tradition of meaningful exchange while embracing modern flexibility. Trueque empowers communities to unlock value in unused possessions and untapped talents - because sometimes the best currency is connection, not cash.
+                Revitalize the tradition of meaningful exchange with modern flexibility. Trueque is here to empower you to unlock value in what you already have—and discover a community that thrives on connection over cash.
+            </p>
+
+            <a href="./app/index.html" class="cta-button">
+                Join the Fun and Test Trueque 🎉
+            </a>
+
+            <p class="description" style="color: var(--text-light); font-size: 0.9rem; margin-top: 0rem;">
+                🌍 Available Now for Android (iOS coming soon)
             </p>
         </div>
     </div>
 
     <footer>
         <div class="footer-content">
-            <p style="margin: 0px;"><a href="./tspp/index.html"">Privacy Policy</a></p>
+            <p style="margin: 0px;"><a href="./app/index.html">Test Trueque</a><a href="./tspp/index.html" style="margin-left: 15px;">Privacy Policy</a></p>
             <p style="margin: 0px;">truequeww@gmail.com</p>
         </div>
     </footer>
