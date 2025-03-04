@@ -55,6 +55,7 @@
             align-items: center;
             text-align: center;
             padding: 20px;
+            padding-top: 0px;
         }
 
         .content-container {
@@ -154,6 +155,24 @@
             color: var(--primary-color);
         }
 
+        .video-container {
+            max-width: 640px; /* 16:9 ratio for 1280x720 */
+            width: 100%;
+            margin: 30px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 16/9; /* Maintain video proportion */
+        }
+
+        
+
         @media (max-width: 768px) {
             .content-container {
                 padding: 25px;
@@ -175,12 +194,32 @@
         <img src="./truequeLogo.jpg" alt="Trueque Logo">
     </div>
 
+
+
     <div class="content">
         <div class="content-container">
             <h1>🔄 Trueque: Where Community Meets Exchange</h1>
+            
+            <!-- <p class="description">
+                Trueque reimagines the ancient art of bartering for the modern world. In a cash-driven society, we believe meaningful exchange should go beyond money.
+            </p> -->
+
             <p class="description">
                 Trueque reimagines the ancient art of bartering for the modern world. In a cash-driven society, we believe meaningful exchange should go beyond money. Trueque is where your unused items find new life and your unique skills create lasting connections, not just transactions.
             </p>
+
+            <div class="video-container">
+                <video controls playsinline poster="./showcasevideo.png">
+                    <source src="./TruequeVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        
+            <!-- <p class="description">
+                Trueque is where your unused items find new life and your unique skills create lasting connections, not just transactions.
+            </p> -->
+
+   
 
             <div class="feature-list">
                 <div class="feature-item">
